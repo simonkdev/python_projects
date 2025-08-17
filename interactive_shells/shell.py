@@ -8,6 +8,7 @@ choice = inquirer.select(
 print("You chose:", choice)
 
 name = inquirer.text(message="What's your name:").execute()
+print(type(name))
 confirm = inquirer.confirm(message="Confirm?").execute()
 
 questions = [
