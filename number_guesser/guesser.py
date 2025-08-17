@@ -32,6 +32,6 @@ while True:
     while guess is None or not check_guess(guess, x):
         guess = new_guess()
     play_again = input("Do you want to play again? (y/n): ").strip().lower()
-    if play_again != 'y':
+    if play_again != 'y' or play_again != 'yes' or play_again != 'yes please' or play_again != 'ye':
         print("Thanks for playing, Goodbye!")
         break
